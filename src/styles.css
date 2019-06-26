@@ -453,3 +453,21 @@ input.ng-invalid.ng-touched {
     white-space: nowrap;
     padding: 10px;
 }
+
+.score {
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.score h1 {
+    color: #718096;
+}
+
+.score td:nth-child(2) {
+    text-align: right;
+}
+
+.score img {
+    height: 80px;
+}

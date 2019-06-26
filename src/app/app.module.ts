@@ -7,6 +7,9 @@ import { ComponenteEnLineaComponent } from './componente-en-linea/componente-en-
 import { HomeComponent } from './home/home.component';
 import { AutenticacionComponent } from './autenticacion/autenticacion.component';
 import { EncapsulacionComponent } from './encapsulacion/encapsulacion.component';
+import { JugadoresComponent } from './jugadores/jugadores.component';
+import { MarcadorComponent } from './marcador/marcador.component';
+import { TopScoreComponent } from './top-score/top-score.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { EncapsulacionComponent } from './encapsulacion/encapsulacion.component'
     ComponenteEnLineaComponent,
     HomeComponent,
     AutenticacionComponent,
-    EncapsulacionComponent
+    EncapsulacionComponent,
+    JugadoresComponent,
+    MarcadorComponent,
+    TopScoreComponent
   ],
   imports: [
     BrowserModule,

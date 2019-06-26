@@ -1,0 +1,22 @@
+<div class="marcador">
+  <div class="logo">
+    <img src="assets/img/LAL.svg">
+  </div>
+  <div>
+    <span>{{puntosLocales}}</span>
+    <img src="assets/img/NBA_Logo.svg" class="nba">
+    <span>{{puntosVisitantes}}</span>
+  </div>
+  <div class="logo">
+    <img src="assets/img/BOS.svg">
+  </div>
+</div>
+<div class="jugadores">
+    <app-jugadores class="equipo" [jugadores]="locales" [equipo]="'lakers'"
+                   (canasta)="getCanastaLocal($event)"></app-jugadores>
+                   <!-- $event identificador propio de Angular -->
+
+    <app-jugadores class="equipo" [jugadores]="visitantes" [equipo]="'celtics'"
+                   (canasta)="getCanastaVisitante($event)"></app-jugadores>
+</div>
+<app-top-score [jugadores]="topJugadores"></app-top-score>
