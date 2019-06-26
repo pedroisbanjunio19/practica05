@@ -1,0 +1,8 @@
+<div class="card m">
+  <app-autenticacion>
+    <h1>{{tituloForm}}</h1>
+    <button>{{textoBoton}}</button>
+  </app-autenticacion>
+  <p *ngIf="login">Pulse <b (click)="changeForm()">aquí</b> sí si no dispone de cuenta</p>
+  <p *ngIf="!login">Pulse <b (click)="changeForm()">aquí</b> si ya dispone de cuenta</p>
+</div>
